@@ -1,0 +1,41 @@
+---
+import siteData from "../data/site.json";
+const { gallery } = siteData;
+---
+
+<section id="galerie" class="py-16 md:py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header -->
+    <div class="text-center mb-12" data-reveal>
+      <span class="text-primary font-semibold text-sm uppercase tracking-wider">Notre travail</span>
+      <h2 class="text-3xl md:text-4xl font-display font-bold text-neutral-900 mt-2 mb-4">
+        Découvrez nos créations
+      </h2>
+      <p class="text-lg text-neutral-700 max-w-2xl mx-auto">
+        Quelques exemples de nail art et poses réalisées chez MK Nails
+      </p>
+    </div>
+
+    <!-- Gallery grid -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-6" data-reveal-stagger>
+      {gallery.map((item, index) => (
+        <div class="group relative aspect-square rounded-xl overflow-hidden bg-neutral-100 hover:shadow-xl transition-all duration-300">
+          <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary/20 to-secondary/20">
+            <div class="text-center p-6">
+              <div class="text-4xl mb-3">💅</div>
+              <p class="text-neutral-700 font-medium text-sm">{item.caption}</p>
+              <p class="text-neutral-600 text-xs mt-2">Photo à venir</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- CTA Instagram (si disponible) -->
+    <div class="text-center mt-10">
+      <p class="text-neutral-600 text-sm">
+        📸 Les photos de nos créations seront bientôt disponibles
+      </p>
+    </div>
+  </div>
+</section>

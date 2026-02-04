@@ -1,0 +1,326 @@
+{
+  "business": {
+    "name": "MK Nails Avignon",
+    "tagline": "Sublimez vos mains avec des ongles qui durent",
+    "description": "Salon de manucure et prothésie ongulaire à Avignon. Malika, prothésiste passionnée et perfectionniste, vous accueille 7j/7 pour des poses gel, semi-permanent et nail art sur-mesure. Découvrez un savoir-faire reconnu par 45 avis 5 étoiles sur Google.",
+    "owner": "Malika",
+    "rating": 4.9,
+    "reviewCount": 45,
+    "yearEstablished": null
+  },
+
+  "contact": {
+    "phone": "+33662732115",
+    "phoneDisplay": "06 62 73 21 15",
+    "phoneLink": "0662732115",
+    "email": null,
+    "address": {
+      "street": "11 Rue Figuière",
+      "city": "Avignon",
+      "zipCode": "84000",
+      "full": "11 Rue Figuière, 84000 Avignon"
+    },
+    "hours": "7j/7 de 7h à 20h",
+    "hoursDetail": {
+      "lundi": "07:00 - 20:00",
+      "mardi": "07:00 - 20:00",
+      "mercredi": "07:00 - 20:00",
+      "jeudi": "07:00 - 20:00",
+      "vendredi": "07:00 - 20:00",
+      "samedi": "07:00 - 20:00",
+      "dimanche": "07:00 - 20:00"
+    },
+    "googleMapsEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.5!2d4.807!3d43.947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b5eb3e0a0a0a0a%3A0x0!2z!5e0!3m2!1sfr!2sfr!4v1234567890",
+    "googleMapsLink": "https://maps.google.com/?q=11+Rue+Figuière,+84000+Avignon",
+    "parkingInfo": "Parking gratuit à proximité (Hôtel)"
+  },
+
+  "services": [
+    {
+      "category": "Prestations Mains",
+      "icon": "✨",
+      "items": [
+        {
+          "name": "Manucure simple + soin",
+          "price": "25€",
+          "description": "Nettoyage, soin des cuticules, limage et vernis classique"
+        },
+        {
+          "name": "Semi-permanent (ongles naturels)",
+          "price": "30€",
+          "description": "Vernis semi-permanent longue tenue sur ongles naturels"
+        },
+        {
+          "name": "Renfort gel (ongles naturels)",
+          "price": "35€",
+          "description": "Renforcement au gel pour ongles naturels fragiles"
+        },
+        {
+          "name": "Pose complète capsule + gel",
+          "price": "40€",
+          "description": "Extension capsule avec gel UV, forme et longueur au choix",
+          "featured": true
+        },
+        {
+          "name": "Remplissage",
+          "price": "35€",
+          "description": "Retouche de la repousse sur pose gel existante (MK Nails uniquement)"
+        }
+      ]
+    },
+    {
+      "category": "Options & Finitions",
+      "icon": "💅",
+      "items": [
+        {
+          "name": "French manucure",
+          "price": "+5€",
+          "description": "Élégance classique avec pointe blanche"
+        },
+        {
+          "name": "Nail art personnalisé",
+          "price": "Sur devis",
+          "description": "Créations uniques selon vos envies et inspirations"
+        },
+        {
+          "name": "Changement de forme",
+          "price": "+5€",
+          "description": "Modifiez la forme de vos ongles (carré, amande, stiletto, etc.)"
+        },
+        {
+          "name": "Taille L/XL",
+          "price": "+5€",
+          "description": "Supplément pour ongles extra longs"
+        }
+      ]
+    },
+    {
+      "category": "Prestations Pieds",
+      "icon": "🦶",
+      "items": [
+        {
+          "name": "Semi-permanent pieds",
+          "price": "25€",
+          "description": "Vernis semi-permanent longue tenue pour les pieds"
+        },
+        {
+          "name": "Rallongement",
+          "price": "+5€",
+          "description": "Extension pour ongles de pieds"
+        },
+        {
+          "name": "French pieds",
+          "price": "+5€",
+          "description": "French manucure pour les pieds"
+        }
+      ]
+    },
+    {
+      "category": "Formule Complète",
+      "icon": "🌸",
+      "featured": true,
+      "items": [
+        {
+          "name": "Mains + Pieds (capsule gel + semi permanent)",
+          "price": "60€",
+          "description": "La formule tout-en-un : pose complète mains + semi-permanent pieds",
+          "badge": "Meilleure offre"
+        }
+      ]
+    },
+    {
+      "category": "Dépose",
+      "icon": "🔄",
+      "items": [
+        {
+          "name": "Gel / Acrylique / Résine",
+          "price": "20€",
+          "description": "Dépose professionnelle sans abîmer vos ongles naturels"
+        },
+        {
+          "name": "Semi-permanent",
+          "price": "15€",
+          "description": "Retrait doux du vernis semi-permanent"
+        },
+        {
+          "name": "Dépose + pose immédiate",
+          "price": "15€",
+          "description": "Tarif réduit si nouvelle pose le même jour"
+        }
+      ]
+    }
+  ],
+
+  "policyNote": "⚠️ Aucun remplissage ne sera effectué sur une pose réalisée ailleurs. Une dépose sera nécessaire.",
+
+  "whyChooseUs": [
+    {
+      "icon": "🎨",
+      "title": "Nail art sur-mesure",
+      "description": "Des créations uniques adaptées à vos envies et à votre style"
+    },
+    {
+      "icon": "⏱️",
+      "title": "Tenue jusqu'à 4 semaines",
+      "description": "Des ongles qui résistent au temps grâce à des produits professionnels"
+    },
+    {
+      "icon": "💎",
+      "title": "Perfectionniste & minutieuse",
+      "description": "Chaque détail compte pour un résultat impeccable"
+    },
+    {
+      "icon": "🗓️",
+      "title": "Ouvert 7j/7",
+      "description": "Prenez rendez-vous du lundi au dimanche, de 7h à 20h"
+    }
+  ],
+
+  "reviews": [
+    {
+      "author": "April Touzet",
+      "rating": 5,
+      "text": "Une prothésiste ongulaire exceptionnelle ! Travail impeccable, minutieux et toujours réalisé avec beaucoup de professionnalisme. Les ongles sont magnifiques, tiennent parfaitement dans le temps.",
+      "date": "Il y a un mois"
+    },
+    {
+      "author": "Lou HOHMANN",
+      "rating": 5,
+      "text": "J'ai adoré la prestation pour les ongles ! Le résultat est juste magnifique, très soigné et exactement ce que je voulais. En plus de ça la fille est hyper gentille accueillante et met tout de suite à l'aise.",
+      "date": "Il y a un mois"
+    },
+    {
+      "author": "Carole Lechat",
+      "rating": 5,
+      "text": "J'ai découvert le gel avec Malika, c'est fait avec soin, très appliquée et minutieuse. Ça dure 4 semaines pour moi c'est génial ! C'est un vrai moment pour soi.",
+      "date": "Il y a 2 mois"
+    },
+    {
+      "author": "Shaima Slh",
+      "rating": 5,
+      "text": "Expérience agréable avec La chère Malika, ses ongles sont parfaits, elle est très perfectionniste et avec un énorme bon rapport qualité prix, vous ne trouverez pas mieux ailleurs.",
+      "date": "Il y a 4 mois"
+    },
+    {
+      "author": "Anyssa Carneiro",
+      "rating": 5,
+      "text": "2ème fois que je fais appel à ses services. Une gentillesse et un professionnalisme hors pair. Très patiente et à l'écoute, si vous manquez d'idées ou d'inspirations, elle en aura pour vous !",
+      "date": "Il y a 4 mois"
+    },
+    {
+      "author": "Chloe Panis",
+      "rating": 5,
+      "text": "Un travail soigné et fait avec passion. Elle est à l'écoute, attentive aux demandes et le résultat est toujours magnifique. Les ongles tiennent très bien dans le temps.",
+      "date": "Il y a un mois"
+    },
+    {
+      "author": "Yoko Alexandrowicz",
+      "rating": 5,
+      "text": "Je suis arrivée avec des ongles plus qu'en mauvais état et non seulement Malika a su leur redonner vie mais elle m'a en plus fait de jolis ongles pour les fêtes !",
+      "date": "Il y a un mois"
+    },
+    {
+      "author": "Clara",
+      "rating": 5,
+      "text": "Je recommande vivement ce salon ! Elle fait un travail impeccable. En plus d'être très professionnelle, elle est super accueillante, adore discuter et met tout de suite à l'aise.",
+      "date": "Il y a 4 mois"
+    }
+  ],
+
+  "gallery": [
+    {
+      "image": "/images/nailart-placeholder-1.jpg",
+      "alt": "Nail art créatif MK Nails Avignon",
+      "caption": "Nail art personnalisé"
+    },
+    {
+      "image": "/images/nailart-placeholder-2.jpg",
+      "alt": "French manucure classique",
+      "caption": "French manucure"
+    },
+    {
+      "image": "/images/nailart-placeholder-3.jpg",
+      "alt": "Pose gel nude élégante",
+      "caption": "Nude élégant"
+    },
+    {
+      "image": "/images/nailart-placeholder-4.jpg",
+      "alt": "Pose gel avec strass",
+      "caption": "Pose gel avec strass"
+    },
+    {
+      "image": "/images/nailart-placeholder-5.jpg",
+      "alt": "Nail art tropical",
+      "caption": "Design tropical"
+    },
+    {
+      "image": "/images/nailart-placeholder-6.jpg",
+      "alt": "Ongles longs stiletto",
+      "caption": "Stiletto glamour"
+    }
+  ],
+
+  "faq": [
+    {
+      "question": "Combien de temps tient une pose complète ?",
+      "answer": "Nos poses complètes en gel tiennent entre 3 et 4 semaines selon la pousse de vos ongles. De nombreuses clientes témoignent d'une tenue exceptionnelle jusqu'à 4 semaines grâce à la qualité de nos produits et de notre technique."
+    },
+    {
+      "question": "Puis-je venir avec une pose faite ailleurs ?",
+      "answer": "Nous n'effectuons pas de remplissage sur une pose réalisée dans un autre salon pour garantir la qualité et la durabilité de notre travail. Il faudra prévoir une dépose au préalable (tarif dépose selon type de pose)."
+    },
+    {
+      "question": "Proposez-vous du nail art personnalisé ?",
+      "answer": "Absolument ! Le nail art est notre spécialité. Vous pouvez venir avec vos inspirations (photos, idées) ou me laisser créer un design unique pour vous. Le tarif est sur devis selon la complexité du design souhaité."
+    },
+    {
+      "question": "Comment prendre rendez-vous ?",
+      "answer": "Vous pouvez me contacter directement par téléphone au 06 62 73 21 15 ou via le formulaire de contact sur ce site. Je suis ouverte 7 jours sur 7 de 7h à 20h pour s'adapter à vos disponibilités."
+    },
+    {
+      "question": "Où se garer à proximité du salon ?",
+      "answer": "Un parking gratuit est disponible à proximité du salon (à l'hôtel). L'accès est facile et vous ne perdrez pas de temps à chercher une place."
+    }
+  ],
+
+  "cta": {
+    "primary": "Prendre rendez-vous",
+    "secondary": "Voir les tarifs",
+    "booking": {
+      "type": "phone",
+      "value": "0662732115",
+      "display": "06 62 73 21 15"
+    }
+  },
+
+  "branding": {
+    "colors": {
+      "primary": "#FF6B6B",
+      "primaryDark": "#E85D5D",
+      "secondary": "#4ECDC4",
+      "accent": "#45B7AA",
+      "accentDark": "#2D9B8F",
+      "neutral": "#FFF8F3",
+      "text": "#2C3E50",
+      "textLight": "#5D6D7E"
+    },
+    "fonts": {
+      "heading": "Cormorant Garamond",
+      "body": "Inter"
+    }
+  },
+
+  "seo": {
+    "title": "MK Nails Avignon | Prothésiste Ongulaire 4.9★ | Manucure & Nail Art",
+    "description": "Salon de manucure à Avignon noté 4.9★ (45 avis). Pose gel, semi-permanent, nail art sur-mesure par Malika, prothésiste passionnée. Ouvert 7j/7. RDV au 06 62 73 21 15.",
+    "keywords": "manucure Avignon, prothésiste ongulaire Avignon, pose ongles gel Avignon, nail art Avignon, semi permanent Avignon, MK Nails, ongles Avignon, onglerie Avignon, salon manucure Avignon",
+    "ogImage": "/images/og-image.jpg"
+  },
+
+  "social": {
+    "instagram": null,
+    "facebook": null,
+    "tiktok": null,
+    "googleMaps": "https://www.google.com/maps/place/MK+Nails+Avignon"
+  }
+}

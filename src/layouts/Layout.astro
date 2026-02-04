@@ -1,0 +1,123 @@
+---
+import siteData from "../data/site.json";
+import "../styles/global.css";
+
+const { title, description } = siteData.seo;
+const { business, contact } = siteData;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": business.name,
+  "description": business.description,
+  "telephone": contact.phone,
+  "url": Astro.url.origin,
+  "image": `${Astro.url.origin}/images/og-image.jpg`,
+  "priceRange": "25€ - 60€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": contact.address.street,
+    "addressLocality": contact.address.city,
+    "postalCode": contact.address.zipCode,
+    "addressCountry": "FR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": business.rating,
+    "reviewCount": business.reviewCount,
+    "bestRating": 5
+  },
+  "areaServed": [
+    "Avignon", "Villeneuve-lès-Avignon", "Le Pontet", "Montfavet",
+    "Sorgues", "Vedène", "Entraigues-sur-la-Sorgue", "Caumont-sur-Durance"
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "07:00",
+    "closes": "20:00"
+  }
+};
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={Astro.url.href} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content={business.name} />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </head>
+  <body class="bg-neutral-50 text-neutral-700 font-sans antialiased">
+    <slot />
+
+    <script>
+      // Scroll reveal observer
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('revealed');
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+      );
+
+      document.querySelectorAll('[data-reveal], [data-reveal-stagger]').forEach((el) => {
+        revealObserver.observe(el);
+      });
+
+      // Animated counters
+      const counterObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const el = entry.target as HTMLElement;
+              const target = parseInt(el.dataset.countTo || '0', 10);
+              const duration = 1800;
+              const start = performance.now();
+
+              const animate = (now: number) => {
+                const elapsed = now - start;
+                const progress = Math.min(elapsed / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                el.textContent = Math.round(eased * target).toString();
+                if (progress < 1) requestAnimationFrame(animate);
+              };
+
+              requestAnimationFrame(animate);
+              counterObserver.unobserve(el);
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+
+      document.querySelectorAll('[data-count-to]').forEach((el) => {
+        counterObserver.observe(el);
+      });
+    </script>
+  </body>
+</html>
