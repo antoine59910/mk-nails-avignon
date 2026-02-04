@@ -229,34 +229,39 @@
 
   "gallery": [
     {
-      "image": "/images/nailart-placeholder-1.jpg",
+      "image": "/images/image.png",
       "alt": "Nail art créatif MK Nails Avignon",
       "caption": "Nail art personnalisé"
     },
     {
-      "image": "/images/nailart-placeholder-2.jpg",
-      "alt": "French manucure classique",
-      "caption": "French manucure"
+      "image": "/images/image copy.png",
+      "alt": "Création nail art MK Nails",
+      "caption": "Création unique"
     },
     {
-      "image": "/images/nailart-placeholder-3.jpg",
-      "alt": "Pose gel nude élégante",
-      "caption": "Nude élégant"
+      "image": "/images/image copy 2.png",
+      "alt": "Pose gel élégante",
+      "caption": "Pose gel"
     },
     {
-      "image": "/images/nailart-placeholder-4.jpg",
-      "alt": "Pose gel avec strass",
-      "caption": "Pose gel avec strass"
+      "image": "/images/image copy 3.png",
+      "alt": "Nail art détaillé",
+      "caption": "Design détaillé"
     },
     {
-      "image": "/images/nailart-placeholder-5.jpg",
-      "alt": "Nail art tropical",
-      "caption": "Design tropical"
+      "image": "/images/image copy 4.png",
+      "alt": "Manucure MK Nails Avignon",
+      "caption": "Manucure soignée"
     },
     {
-      "image": "/images/nailart-placeholder-6.jpg",
-      "alt": "Ongles longs stiletto",
-      "caption": "Stiletto glamour"
+      "image": "/images/image copy 5.png",
+      "alt": "Nail art créatif",
+      "caption": "Créations artistiques"
+    },
+    {
+      "image": "/images/image copy 6.png",
+      "alt": "Ongles MK Nails",
+      "caption": "Nos réalisations"
     }
   ],
 

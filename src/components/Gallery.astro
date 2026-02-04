@@ -18,24 +18,22 @@ const { gallery } = siteData;
 
     <!-- Gallery grid -->
     <div class="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-6" data-reveal-stagger>
-      {gallery.map((item, index) => (
+      {gallery.map((item) => (
         <div class="group relative aspect-square rounded-xl overflow-hidden bg-neutral-100 hover:shadow-xl transition-all duration-300">
-          <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary/20 to-secondary/20">
-            <div class="text-center p-6">
-              <div class="text-4xl mb-3">💅</div>
-              <p class="text-neutral-700 font-medium text-sm">{item.caption}</p>
-              <p class="text-neutral-600 text-xs mt-2">Photo à venir</p>
-            </div>
+          <img
+            src={item.image}
+            alt={item.alt}
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            loading="lazy"
+          />
+          <!-- Caption overlay on hover -->
+          <div class="absolute inset-0 bg-gradient-to-t from-neutral-900/80 via-neutral-900/0 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+            <p class="text-white text-sm font-medium p-4">
+              {item.caption}
+            </p>
           </div>
         </div>
       ))}
-    </div>
-
-    <!-- CTA Instagram (si disponible) -->
-    <div class="text-center mt-10">
-      <p class="text-neutral-600 text-sm">
-        📸 Les photos de nos créations seront bientôt disponibles
-      </p>
     </div>
   </div>
 </section>
