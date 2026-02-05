@@ -299,15 +299,16 @@
   },
 
   "branding": {
+    "logo": "/images/logo.png",
     "colors": {
-      "primary": "#FF6B6B",
-      "primaryDark": "#E85D5D",
-      "secondary": "#4ECDC4",
-      "accent": "#45B7AA",
-      "accentDark": "#2D9B8F",
-      "neutral": "#FFF8F3",
-      "text": "#2C3E50",
-      "textLight": "#5D6D7E"
+      "primary": "#A89080",
+      "primaryDark": "#8B7355",
+      "secondary": "#C9B8A8",
+      "accent": "#D4C4B5",
+      "accentDark": "#A89080",
+      "neutral": "#FAF7F5",
+      "text": "#4A4035",
+      "textLight": "#6B5D52"
     },
     "fonts": {
       "heading": "Cormorant Garamond",
@@ -319,7 +320,7 @@
     "title": "MK Nails Avignon | Prothésiste Ongulaire 4.9★ | Manucure & Nail Art",
     "description": "Salon de manucure à Avignon noté 4.9★ (45 avis). Pose gel, semi-permanent, nail art sur-mesure par Malika, prothésiste passionnée. Ouvert 7j/7. RDV au 06 62 73 21 15.",
     "keywords": "manucure Avignon, prothésiste ongulaire Avignon, pose ongles gel Avignon, nail art Avignon, semi permanent Avignon, MK Nails, ongles Avignon, onglerie Avignon, salon manucure Avignon",
-    "ogImage": "/images/og-image.jpg"
+    "ogImage": "/images/logo.png"
   },
 
   "social": {

@@ -4,22 +4,22 @@
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-display: 'Cormorant Garamond', Georgia, serif;
 
-  /* Palette Tropical Vibrant */
-  --color-primary: #FF6B6B;
-  --color-primary-light: #FF8585;
-  --color-primary-dark: #E85D5D;
-  --color-secondary: #4ECDC4;
-  --color-secondary-light: #6ED9D1;
-  --color-secondary-dark: #45B7AA;
-  --color-accent: #45B7AA;
-  --color-accent-light: #5CC4B8;
-  --color-accent-dark: #2D9B8F;
-  --color-neutral-50: #FFF8F3;
-  --color-neutral-100: #FFF3EB;
-  --color-neutral-200: #FFE9DB;
-  --color-neutral-700: #5D6D7E;
-  --color-neutral-800: #2C3E50;
-  --color-neutral-900: #1A252F;
+  /* Palette Élégante Beige/Taupe - inspirée du logo MK */
+  --color-primary: #A89080;
+  --color-primary-light: #BDA99A;
+  --color-primary-dark: #8B7355;
+  --color-secondary: #C9B8A8;
+  --color-secondary-light: #D9CCC0;
+  --color-secondary-dark: #A89080;
+  --color-accent: #8B7355;
+  --color-accent-light: #A89080;
+  --color-accent-dark: #6B5740;
+  --color-neutral-50: #FAF7F5;
+  --color-neutral-100: #F5F0EC;
+  --color-neutral-200: #EDE6E0;
+  --color-neutral-700: #6B5D52;
+  --color-neutral-800: #4A4035;
+  --color-neutral-900: #2D2620;
 }
 
 html {
@@ -129,13 +129,13 @@ html {
 /* ===== Button pulse on CTA ===== */
 @keyframes pulse-ring {
   0% {
-    box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.4);
+    box-shadow: 0 0 0 0 rgba(168, 144, 128, 0.4);
   }
   70% {
-    box-shadow: 0 0 0 12px rgba(255, 107, 107, 0);
+    box-shadow: 0 0 0 12px rgba(168, 144, 128, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(255, 107, 107, 0);
+    box-shadow: 0 0 0 0 rgba(168, 144, 128, 0);
   }
 }
 
