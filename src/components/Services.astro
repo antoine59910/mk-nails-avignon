@@ -11,7 +11,7 @@ const categoryIcons: Record<string, string> = {
 };
 ---
 
-<section id="tarifs" class="py-20 md:py-28 bg-neutral-50">
+<section id="tarifs" class="py-20 md:py-28 bg-neutral-50 overflow-hidden">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Section header -->
     <div class="text-center mb-16" data-reveal>
@@ -30,7 +30,7 @@ const categoryIcons: Record<string, string> = {
     <!-- Menu spa -->
     <div class="space-y-12" data-reveal-stagger>
       {services.map((category) => (
-        <div class={`${category.featured ? 'bg-white rounded-2xl p-8 border border-secondary/30 shadow-sm' : ''}`}>
+        <div class={`${category.featured ? 'bg-white rounded-2xl p-8 border border-secondary/30 shadow-sm overflow-hidden' : ''}`}>
           {category.featured && (
             <div class="inline-flex items-center gap-1.5 text-secondary text-xs font-medium tracking-wider uppercase mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
