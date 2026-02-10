@@ -5,14 +5,15 @@
   --font-display: 'Cormorant Garamond', Georgia, serif;
 
   /* Palette Elegante Beige/Taupe - inspiree du logo MK */
-  --color-primary: #A89080;
-  --color-primary-light: #BDA99A;
-  --color-primary-dark: #8B7355;
+  /* Primary darkened for WCAG AA contrast (5.1:1 on neutral-50, 5.4:1 white-on-bg) */
+  --color-primary: #7D6555;
+  --color-primary-light: #A89080;
+  --color-primary-dark: #65503D;
   --color-secondary: #C9B8A8;
   --color-secondary-light: #D9CCC0;
-  --color-secondary-dark: #A89080;
+  --color-secondary-dark: #7D6555;
   --color-accent: #8B7355;
-  --color-accent-light: #A89080;
+  --color-accent-light: #7D6555;
   --color-accent-dark: #6B5740;
   --color-neutral-50: #FAF7F5;
   --color-neutral-100: #F5F0EC;
@@ -117,7 +118,7 @@ html {
 
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 32px -8px rgba(168, 144, 128, 0.18);
+  box-shadow: 0 12px 32px -8px rgba(125, 101, 85, 0.18);
 }
 
 /* ===== Nav link underline animation ===== */
@@ -132,7 +133,7 @@ html {
   left: 0;
   width: 0;
   height: 1px;
-  background-color: #A89080;
+  background-color: var(--color-primary);
   transition: width 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -176,13 +177,13 @@ html {
 /* ===== Button pulse on CTA ===== */
 @keyframes pulse-ring {
   0% {
-    box-shadow: 0 0 0 0 rgba(168, 144, 128, 0.35);
+    box-shadow: 0 0 0 0 rgba(125, 101, 85, 0.35);
   }
   70% {
-    box-shadow: 0 0 0 10px rgba(168, 144, 128, 0);
+    box-shadow: 0 0 0 10px rgba(125, 101, 85, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(168, 144, 128, 0);
+    box-shadow: 0 0 0 0 rgba(125, 101, 85, 0);
   }
 }
 

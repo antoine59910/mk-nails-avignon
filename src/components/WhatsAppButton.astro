@@ -29,13 +29,13 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
     right: 3rem;
     height: 48px;
     padding: 0 1.25rem 0 0.875rem;
-    background-color: #25D366;
+    background-color: #1E7E34;
     color: white;
     border-radius: 9999px;
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+    box-shadow: 0 4px 14px rgba(30, 126, 52, 0.35);
     z-index: 90;
     transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
                 box-shadow 0.3s ease;
@@ -56,16 +56,16 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
 
   .whatsapp-btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+    box-shadow: 0 6px 20px rgba(30, 126, 52, 0.45);
   }
 
   @keyframes wa-pulse {
     0%, 100% {
-      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+      box-shadow: 0 4px 14px rgba(30, 126, 52, 0.35);
     }
     50% {
-      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35),
-                  0 0 0 8px rgba(37, 211, 102, 0.08);
+      box-shadow: 0 4px 14px rgba(30, 126, 52, 0.35),
+                  0 0 0 8px rgba(30, 126, 52, 0.08);
     }
   }
 
