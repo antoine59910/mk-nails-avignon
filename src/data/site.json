@@ -13,6 +13,7 @@
     "phone": "+33662732115",
     "phoneDisplay": "06 62 73 21 15",
     "phoneLink": "0662732115",
+    "whatsapp": "+33662732115",
     "email": null,
     "address": {
       "street": "11 Rue Figuière",
@@ -229,39 +230,39 @@
 
   "gallery": [
     {
-      "image": "/images/image.png",
-      "alt": "Nail art créatif MK Nails Avignon",
-      "caption": "Nail art personnalisé"
+      "image": "/images/nail-art-1.webp",
+      "alt": "Nail art automnal avec motifs personnalises MK Nails Avignon",
+      "caption": "Nail art personnalise"
     },
     {
-      "image": "/images/image copy.png",
-      "alt": "Création nail art MK Nails",
-      "caption": "Création unique"
+      "image": "/images/nail-art-2.webp",
+      "alt": "Nail art noir et blanc leopard MK Nails",
+      "caption": "Design leopard"
     },
     {
-      "image": "/images/image copy 2.png",
-      "alt": "Pose gel élégante",
-      "caption": "Pose gel"
+      "image": "/images/nail-art-3.webp",
+      "alt": "Pose gel jaune soleil MK Nails Avignon",
+      "caption": "Pose gel soleil"
     },
     {
-      "image": "/images/image copy 3.png",
-      "alt": "Nail art détaillé",
-      "caption": "Design détaillé"
+      "image": "/images/nail-art-4.webp",
+      "alt": "Ongles stiletto nude elegant MK Nails",
+      "caption": "Stiletto nude"
     },
     {
-      "image": "/images/image copy 4.png",
-      "alt": "Manucure MK Nails Avignon",
-      "caption": "Manucure soignée"
+      "image": "/images/nail-art-5.webp",
+      "alt": "Manucure rouge cerise MK Nails Avignon",
+      "caption": "Rouge cerise"
     },
     {
-      "image": "/images/image copy 5.png",
-      "alt": "Nail art créatif",
-      "caption": "Créations artistiques"
+      "image": "/images/nail-art-6.webp",
+      "alt": "Nail art leopard artistique MK Nails",
+      "caption": "Leopard artistique"
     },
     {
-      "image": "/images/image copy 6.png",
-      "alt": "Ongles MK Nails",
-      "caption": "Nos réalisations"
+      "image": "/images/nail-art-7.webp",
+      "alt": "French manucure neon MK Nails Avignon",
+      "caption": "French neon"
     }
   ],
 
@@ -292,9 +293,10 @@
     "primary": "Prendre rendez-vous",
     "secondary": "Voir les tarifs",
     "booking": {
-      "type": "phone",
+      "type": "tally",
       "value": "0662732115",
-      "display": "06 62 73 21 15"
+      "display": "06 62 73 21 15",
+      "embedUrl": null
     }
   },
 
@@ -320,11 +322,11 @@
     "title": "MK Nails Avignon | Prothésiste Ongulaire 4.9★ | Manucure & Nail Art",
     "description": "Salon de manucure à Avignon noté 4.9★ (45 avis). Pose gel, semi-permanent, nail art sur-mesure par Malika, prothésiste passionnée. Ouvert 7j/7. RDV au 06 62 73 21 15.",
     "keywords": "manucure Avignon, prothésiste ongulaire Avignon, pose ongles gel Avignon, nail art Avignon, semi permanent Avignon, MK Nails, ongles Avignon, onglerie Avignon, salon manucure Avignon",
-    "ogImage": "/images/logo.png"
+    "ogImage": "/images/og-image.jpg"
   },
 
   "social": {
-    "instagram": null,
+    "instagram": "https://www.instagram.com/mk_nails84/",
     "facebook": null,
     "tiktok": null,
     "googleMaps": "https://www.google.com/maps/place/MK+Nails+Avignon"

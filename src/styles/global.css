@@ -4,7 +4,7 @@
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-display: 'Cormorant Garamond', Georgia, serif;
 
-  /* Palette Élégante Beige/Taupe - inspirée du logo MK */
+  /* Palette Elegante Beige/Taupe - inspiree du logo MK */
   --color-primary: #A89080;
   --color-primary-light: #BDA99A;
   --color-primary-dark: #8B7355;
@@ -36,11 +36,6 @@ html {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-@keyframes hero-fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
 
 .hero-animate {
@@ -84,7 +79,7 @@ html {
 }
 
 [data-reveal="scale"] {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 
 [data-reveal="scale"].revealed {
@@ -94,7 +89,7 @@ html {
 /* Staggered children */
 [data-reveal-stagger] > * {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(24px);
   transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
               transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -112,27 +107,79 @@ html {
 [data-reveal-stagger].revealed > *:nth-child(6) { transition-delay: 0.5s; }
 [data-reveal-stagger].revealed > *:nth-child(7) { transition-delay: 0.6s; }
 [data-reveal-stagger].revealed > *:nth-child(8) { transition-delay: 0.7s; }
-[data-reveal-stagger].revealed > *:nth-child(9) { transition-delay: 0.8s; }
-[data-reveal-stagger].revealed > *:nth-child(10) { transition-delay: 0.9s; }
 
-/* ===== Enhanced card hovers ===== */
-.card-lift {
-  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
-              box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+/* ===== Card hover (epure) ===== */
+.card-hover {
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+              background-color 0.3s ease;
 }
 
-.card-lift:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.15);
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px -8px rgba(168, 144, 128, 0.18);
+}
+
+/* ===== Nav link underline animation ===== */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #A89080;
+  transition: width 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ===== Section separator ornament ===== */
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: '';
+  height: 1px;
+  width: 60px;
+  background: linear-gradient(to var(--dir, right), #C9B8A8, transparent);
+}
+
+.section-divider::before {
+  --dir: right;
+}
+
+.section-divider::after {
+  --dir: left;
+}
+
+.section-divider-diamond {
+  width: 6px;
+  height: 6px;
+  background-color: #C9B8A8;
+  transform: rotate(45deg);
+  flex-shrink: 0;
 }
 
 /* ===== Button pulse on CTA ===== */
 @keyframes pulse-ring {
   0% {
-    box-shadow: 0 0 0 0 rgba(168, 144, 128, 0.4);
+    box-shadow: 0 0 0 0 rgba(168, 144, 128, 0.35);
   }
   70% {
-    box-shadow: 0 0 0 12px rgba(168, 144, 128, 0);
+    box-shadow: 0 0 0 10px rgba(168, 144, 128, 0);
   }
   100% {
     box-shadow: 0 0 0 0 rgba(168, 144, 128, 0);
@@ -141,6 +188,16 @@ html {
 
 .btn-pulse {
   animation: pulse-ring 2.5s ease-out infinite;
+}
+
+/* ===== Spa menu dotted line ===== */
+.menu-dots {
+  flex: 1;
+  border-bottom: 1px dotted #C9B8A8;
+  margin: 0 0.75rem;
+  min-width: 2rem;
+  position: relative;
+  top: -4px;
 }
 
 /* ===== Counter animation ===== */
